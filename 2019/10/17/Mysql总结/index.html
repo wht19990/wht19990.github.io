@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>Mysql总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="丶世上唯一的你 2019/10/16 20:28:01/*                Mysql第一章1.什么是数据库？    数据库分为：        关系型数据库：sqlserver mysql Oracle        非关系型数据库：Nosql redis数据库即数据仓库，里边存储的有关系的数据，数据库里边，真正装数据的，是里面一张一张的表。什么是表？    表有行和列组成：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mysql总结">
+<meta property="og:url" content="http://yoursite.com/2019/10/17/Mysql总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="丶世上唯一的你 2019/10/16 20:28:01/*                Mysql第一章1.什么是数据库？    数据库分为：        关系型数据库：sqlserver mysql Oracle        非关系型数据库：Nosql redis数据库即数据仓库，里边存储的有关系的数据，数据库里边，真正装数据的，是里面一张一张的表。什么是表？    表有行和列组成：">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-18T00:24:55.153Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Mysql总结">
+<meta name="twitter:description" content="丶世上唯一的你 2019/10/16 20:28:01/*                Mysql第一章1.什么是数据库？    数据库分为：        关系型数据库：sqlserver mysql Oracle        非关系型数据库：Nosql redis数据库即数据仓库，里边存储的有关系的数据，数据库里边，真正装数据的，是里面一张一张的表。什么是表？    表有行和列组成：">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,49 +154,211 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Mysql总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/18/11111/" class="archive-article-date">
-  	<time datetime="2019-10-18T05:08:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/18/11111/">11111</a>
+    <h1 class="article-title" itemprop="name">
+      Mysql总结
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2019/10/17/Mysql总结/" class="archive-article-date">
+  	<time datetime="2019-10-17T10:39:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>丶世上唯一的你 2019/10/16 20:28:01<br>/*                Mysql第一章<br>1.什么是数据库？<br>    数据库分为：<br>        关系型数据库：sqlserver mysql Oracle<br>        非关系型数据库：Nosql redis<br>数据库即数据仓库，里边存储的有关系的数据，数据库里边，<br>真正装数据的，是里面一张一张的表。<br>什么是表？<br>    表有行和列组成：<br>        行称为记录，列称为字段或者属性。<br>    列如：学生表：学生有学号，班级，姓名，身份证号，年龄，<br>        那么这些就称为学生表的字段，学生的数据就是一条一条的记录。<br>    一个数据库有多张有关系的表组成。<br>Mysql软件 Mysql服务器<br>    安装的是两个软件：</p>
+<p>首先安装Mysql服务器，在安装Mysql客户端。<br>Mysql服务器：数据库与表都是存在服务器上的。<br>Mysql客户端:负责连接上Mysql服务器，进而对Mysql服务器进行操作，<br>客户端有sqlyog navicat</p>
+<p>第二部分：SQL语句<br>        1.创建语句<br>            1.创建数据库<br>                create database<br>            2.创建表<br>                create cable表名（<br>                字段名1 数据类型 约束，<br>                字段名1 数据类型 约束，<br>                字段名1 数据类型<br>                ）<br>        2.插入语句<br>          insert into 表名(字段1,字段2,字段3)<br>        3.查询语句<br>        select 字段1,字段2,字段3<br>            from表名<br>        4.更改语句<br>        update 表名 set…where…</p>
+<pre><code>    修改表的定义的语句
+    Alter table 旧表名 rename 新表名
+    Alter table 表名 modify列名的数据类型
+    Alter table&lt;表名&gt;change旧列名 新列名 数据类型
+    Alter table 表名 drop 列名
 
+    添加列
+    Alter table 表名 add 新列名 数据类型
+    5.删除语句
+    删除库
+        drop database 库名；
+    删除表
+        drop table 表名；
+    删除表中所有数据
+        delete from 表名；
+    删除表中指定的数据
+        delete from 表名 where...
+
+约束
+1.主键结束(primary key)
+    主键：一行的唯一标识，表中的其它数据依赖于主键
+    不允许重复，非空
+2.非空约束(not null)
+3.唯一约束(unique)
+    此列不允许重复
+4.默认值(default)
+5.check约束(check)
+6.外键约束(foreign key)
+    外键：此表中的一个字段，引用另外一张表中字段数据，并且被引用的字段，
+        是另外一张表主键。那么此表中的字段就称为本张表的外键。</code></pre><p>*/<br>#创建库<br>CREATE DATABASE  onlinemalll;<br>#使用的库<br>USE onlinemalll;<br>#创建表<br>CREATE TABLE goods(<br>    gid INT PRIMARY KEY,#把gid设置表的主题<br>    gnma VARCHAR(100),<br>    gprice FLOAT<br>)<br>#插入数据  insert into<br>INSERT INTO goods (gid,gnma,gprice) VALUES(1,’花季少女’,11.6);<br>INSERT INTO goods (gid,gnma,gprice) VALUES(2,’小熊’,3.5);<br>INSERT INTO goods (gid,gnma,gprice) VALUES(3,’抠鼻屎’,5);<br>#查询goods表<br>SELECT * FROM goods;<br>#删除gid等于3的数据<br>delete from goods where gid=3;<br>#把小熊的价格改为15元<br>update goods set gprice=15 where gnma=’小熊’;</p>
+<p>CREATE DATABASE  SchoolDB;<br>USE SchoolDB;<br>CREATE TABLE teacher(<br>    tid INT PRIMARY KEY AUTO_INCREMENT, #自增长 AUTO_INCREMENT<br>    teachername VARCHAR(20) NOT NULL,<br>    hiredate DATE ,<br>    gender VARCHAR(10) DEFAULT ‘男’<br>)<br>INSERT INTO teacher(teachername,hiredate,gender) VALUES(‘王飞’,’2015-03-07’,’男’);<br>INSERT INTO teacher(teachername,hiredate,gender) VALUES(‘浩哥’,’2016-03-07’,’男’);<br>SELECT * FROM teacher;</p>
+<p>丶世上唯一的你 2019/10/16 20:28:21<br>/*    Mysql第二次课<br>数据库的设计规范<br>  数据库的设计三大范式<br>     第一范式：<br>       表中的字段都是不可分割的最小的单元数据<br>     第二范式：<br>        每张表只能描述一件事，每张表都要有主键，<br>     第三范式：<br>         非主键字段，要依赖于主键字段，换句话说，非主键字段与主键字段直接相关。<br>         在设计表时，尽可能依照三大范式，但有的时候为了性能，会牺牲范式。<br>      Mysql运算符：<br>        算术运算符：+ - * /<br>        逻辑运算符: and or !<br>        比较运算符: &gt; &lt; &gt;= &lt;= &lt;&gt;(不等于) !=<br>   聚合函数<br>      count() 求行数<br>      sun() 求一列的和<br>      avg()去平均值<br>      max()求最大值<br>      min()求最小值<br>  Mysql常用关键字<br>    in     查询在什么什么在选项中的数据 where name in(‘张三’，’李四’)<br>        把name等于张三李四的查询出来<br>    not in    where name not in(‘张三’，’李四’)<br>        把name不等于张三李四的查询出来    </p>
+<pre><code>distinct 去重
+
+limit     查询出表的前几行
+
+between...and...  在什么什么之间
+
+as</code></pre><p>*/</p>
+<p>SELECT * FROM goods;<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘花季少女’,11.6);<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘小熊’,3.5);<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘吴海涛’,5);<br>#查询出商品价格大于10的商品<br>SELECT * FROM goods WHERE gprice&gt;10;<br>#查询商品价格不等于10的商品信息<br>SELECT * FROM goods WHERE gprice&lt;&gt;10;<br>#查询商品价格大于10并且小于50的商品信息<br>SELECT * FROM goods WHERE gprice&gt;10 AND gprice&lt;50;<br>#查询商品的数量<br>SELECT COUNT(<em>) FROM goods;<br>#字段名 as 新字段名 给列名重命名成新的列名<br>SELECT COUNT(</em>) AS ‘总数量’ FROM goods;<br>#查询商品的总价格<br>SELECT SUM(gprice) ‘总价格’ FROM goods;<br>#查询商品的平均价格<br>SELECT AVG(gprice) ‘平均价格’ FROM goods;<br>#查询商品的最高价格<br>SELECT MAX(gprice) ‘最高价格’ FROM goods;<br>#查询商品的最低价格<br>SELECT MIN(gprice) ‘最低价格’ FROM goods;<br>#查询出商品名称是电脑 手机的商品<br>SELECT * FROM goods WHERE gnam IN(‘电脑’,’雨伞’);<br>#查询出商品名称不是电脑 手机的商品<br>SELECT * FROM goods WHERE gnam NOT IN(‘电脑’,’雨伞’);<br>#把商品名字重复的去掉<br>SELECT DISTINCT gnma FROM goods;<br>#查询出表的前两行<br>SELECT * FROM goods LIMIT 0,2;</p>
+<p>SELECT * FROM goods;<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘花季少女’,11.6);<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘小熊’,3.5);<br>INSERT INTO goods (gnma,gprice)<br>    VALUES(‘吴海涛’,5);<br>#查询出商品价格大于10的商品<br>SELECT * FROM goods WHERE gprice&gt;10;<br>#查询商品价格不等于10的商品信息<br>SELECT * FROM goods WHERE gprice&lt;&gt;10;<br>#查询商品价格大于10并且小于50的商品信息<br>SELECT * FROM goods WHERE gprice&gt;10 AND gprice&lt;50;<br>#查询商品的数量<br>SELECT COUNT(<em>) FROM goods;<br>#字段名 as 新字段名 给列名重命名成新的列名<br>SELECT COUNT(</em>) AS ‘总数量’ FROM goods;<br>#查询商品的总价格<br>SELECT SUM(gprice) ‘总价格’ FROM goods;<br>#查询商品的平均价格<br>SELECT AVG(gprice) ‘平均价格’ FROM goods;<br>#查询商品的最高价格<br>SELECT MAX(gprice) ‘最高价格’ FROM goods;<br>#查询商品的最低价格<br>SELECT MIN(gprice) ‘最低价格’ FROM goods;<br>#查询出商品名称是电脑 手机的商品<br>SELECT * FROM goods WHERE gnam IN(‘电脑’,’雨伞’);<br>#查询出商品名称不是电脑 手机的商品<br>SELECT * FROM goods WHERE gnam NOT IN(‘电脑’,’雨伞’);<br>#把商品名字重复的去掉<br>SELECT DISTINCT gnma FROM goods;<br>#查询出表的前两行<br>SELECT * FROM goods LIMIT 0,2;</p>
+<p>丶世上唯一的你 2019/10/16 20:28:29<br>CREATE DATABASE school;<br>USE school;<br>CREATE TABLE teacher(<br>    id INT PRIMARY KEY,<br>    teachername VARCHAR(100),<br>    hiredate DATE,<br>    gender VARCHAR(10) DEFAULT ‘男’<br>)<br>INSERT INTO teacher(id,teachername,hiredate,gender) VALUES(1,’张三’,’2000-01-02’,’男’);<br>INSERT INTO teacher(id,teachername,hiredate,gender) VALUES(2,’李四’,’2000-09-02’,’女’);<br>SELECT *FROM teacher;<br>CREATE TABLE classinfo(<br>    id INT PRIMARY KEY,<br>    classname VARCHAR(100),<br>    gradeld INT,<br>    beginyear YEAR<br>)<br>INSERT INTO classinfo(id,classname,gradeld,beginyear)VALUES(1,’4班’,3,’2018’);<br>INSERT INTO classinfo(id,classname,gradeld,beginyear)VALUES(2,’2班’,5,’2018’);<br>SELECT *FROM classinfo;<br>CREATE TABLE studentinfo(<br>    id INT PRIMARY KEY,<br>    studentname VARCHAR(100),<br>    gender VARCHAR(10),<br>    age INT,<br>    birthday DATE,<br>    classid INT,<br>    beginyear YEAR,<br>    phone VARCHAR(11),<br>    province VARCHAR(100),<br>    city VARCHAR(100),<br>    email VARCHAR(50)<br>)<br>INSERT INTO studentinfo(id,studentname,gender,age,birthday,classid,beginyear,phone,province,city,email)VALUES(1,’小李’,’男’,18,’2000-02-04’,0368,’2018’,’12345678901’,’河南’,’郑州’,‘261566520@.com’);<br>INSERT INTO studentinfo(id,studentname,gender,age,birthday,classid,beginyear,phone,province,city,email)VALUES(2,’小蕾’,’女’,18,’2000-07-09’,0368,’2018’,’12345678901’,’河南’,’郑州’,‘269967230@.com’);<br>SELECT *FROM studentinfo;<br>CREATE TABLE SUBJECT(<br>    id INT PRIMARY KEY,<br>    subjectname VARCHAR(12),<br>    teacherid INT<br>)<br>INSERT INTO SUBJECT(id,subjectname,teacherid)VALUES(1,’JAVA’,99);<br>INSERT INTO SUBJECT(id,subjectname,teacherid)VALUES(2,’C语言’,97);<br>SELECT *FROM SUBJECT;<br>CREATE TABLE exam(<br>    id INT PRIMARY KEY,<br>    exam INT,<br>    subjectid INT,<br>    studentid VARCHAR(10),<br>    remark TEXT<br>)<br>INSERT INTO exam(id,exam,subjectid,studentid,remark)VALUES(1,97,25,’2018070984’,’无’);<br>INSERT INTO exam(id,exam,subjectid,studentid,remark)VALUES(2,65,12,’2018070984’,’无’);<br>SELECT *FROM exam;<br>CREATE TABLE grade(<br>    id INT PRIMARY KEY,<br>    gradename VARCHAR(10),<br>    major VARCHAR(10)<br>)<br>INSERT INTO grade(id,gradename,major)VALUES(1,’三’,’移动网络’);<br>INSERT INTO grade(id,gradename,major)VALUES(2,’二’,’网络营销’);<br>SELECT *FROM grade;</p>
+<p>丶世上唯一的你 2019/10/16 20:28:39<br>/*<br>  Mysql第三次课<br>*/<br>CREATE DATABASE schooldb;<br>USE Schooldb;<br>#教师表<br>CREATE TABLE teacher(<br>   tid INT PRIMARY KEY AUTO_INCREMENT,<br>   tnam VARCHAR(20) NOT NULL,<br>   hiredate DATE,<br>   sex VARCHAR(5)<br>)<br>INSERT INTO teacher(tnam,hiredate,sex)<br>VALUES(‘张三’,’2017-09-01’,’男’),<br>(‘李四’,’2012-07-08’,’男’),<br>(‘王五’,’2019-04-11’,’男’);</p>
+<p>#班级信息表<br>CREATE TABLE ClassInfo(<br>   cid INT PRIMARY KEY AUTO_INCREMENT,<br>   cnam VARCHAR(20) NOT NULL,<br>   grid INT, #年级编号<br>   beginyear VARCHAR(20)<br>)<br>INSERT INTO ClassInfo(cnam,grid,beginyear)<br>VALUES (‘软信1班’,1,’2018’),<br>(‘移动1班’,2,’2018’),<br>(‘软信1班’,3,’2019’),<br>(‘移动1班’,4,’2019’);</p>
+<p>#学生信息表<br>CREATE TABLE StudentInfo(<br>   sid INT PRIMARY KEY AUTO_INCREMENT,<br>   snam VARCHAR(20) NOT NULL,<br>   sex VARCHAR(5),<br>   age INT,<br>   birthday DATE,<br>   cid INT,<br>   beginyear VARCHAR(20),<br>   stel VARCHAR(15),<br>   address VARCHAR(100),<br>   email VARCHAR(50)<br>)<br>INSERT INTO StudentInfo(snam,sex,age<br>,birthday,cid,beginyear,stel,address<br>,email) VALUES(‘崔一’,’男’,18,’2001-07-05’<br>,1,’2018’,’18867890987’,<br>‘河南省许昌市’,‘159078923@qq.com’),<br>(‘丁二’,’男’,19,’2000-08-05’<br>,2,’2018’,’18967890987’,<br>‘河南省许昌市’,‘156078923@qq.com’),<br>(‘丁三’,’男’,20,’1999-09-05’<br>,3,’2018’,’18877890987’,<br>‘河南省郑州市’,‘157078923@qq.com’),<br>(‘周三’,’女’,17,’2002-06-05’<br>,4,’2019’,’18177890987’,<br>‘河南省洛阳市’,‘157278923@qq.com’);</p>
+<p>#课程表<br>CREATE TABLE course(<br>   coid INT PRIMARY KEY AUTO_INCREMENT,<br>   cnam VARCHAR(50) NOT NULL,#课程名<br>   tid INT    #讲授老师编号<br>)<br>INSERT INTO course(cnam,tid)<br>VALUES(‘计算机基础’,1),(‘前端基础’,2)<br>,(‘java基础’,3),(‘js基础’,3);<br>#成绩表<br>CREATE TABLE score(<br>   scid INT PRIMARY KEY AUTO_INCREMENT,<br>   sid INT ,#学生学号+<br>   coid INT, #课程编号<br>   score INT,<br>   remark VARCHAR(100) #备注<br>)<br>INSERT INTO score(sid,coid,score,remark)<br>VALUES(1,1,90,’无’),(1,2,75,’无’),<br>(1,3,59,’无’),(1,4,76,’无’)<br>,(2,1,93,’无’),(2,2,77,’无’),<br>(2,3,66,’无’),(2,4,78,’无’),<br>(3,1,87,’无’),(3,2,55,’无’),<br>(3,3,76,’无’),<br>(4,1,88,’无’),(4,2,66,’无’),<br>(4,3,90,’无’),(4,4,76,’无’);</p>
+<p>#年级表<br>CREATE TABLE grade(<br>  gid INT PRIMARY KEY AUTO_INCREMENT,<br>  gnam VARCHAR(50), #年级名<br>  major VARCHAR(100) #专业<br>)<br>INSERT INTO grade(gnam,major)<br>VALUES(‘移动’,’软信’),(‘19级’,’软信’),(‘18级’,’移动’),(‘19级’,’移动’);</p>
+<p>#order by  排序<br>#把StudentInfo表按从小到大排序<br>#把StudentInfo表按从大到小排序<br>SELECT * FROM StudentInfo ORDER BY age desc;<br>#group by<br>#把某张表按照某个字段进行分组<br>#查询出每个学生的平均成绩，结果要显示的字段为，学生学号，平均成绩<br>select sid,avg(score) ‘平均成绩’<br>from score group by sid;<br>#group by…having…筛选出来符合条件的组<br>#查询出全部及格学生的平均成绩<br>select sid,avg(score) ‘avg’ from score group by sid having min(score)&gt;60;<br>#查询出考试门数不够四门的学生学号<br>select sid from score group by sid having count(*)&lt;4;<br>#查询出计算机基础这门课平均成绩<br>SELECT coid,score from score WHERE coid=(<br>select coid from course where cnam=’计算机基础’);</p>
+<p>#查询出每门课的平均成绩<br>#查询出周三学生的平均成绩</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/17/Mysql总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/18/Mysql第一课/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Mysql第一课
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -215,8 +381,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
