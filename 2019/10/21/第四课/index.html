@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第三课 | Hexo</title>
+  <title>第四课 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;*Mysql第三次课order by  排序group by 把表分组groupby…having…  分组并筛选符合条件的组子查询：    查询语句里面嵌套查询语句连接：    把多张表连接成一张表,注意一般连接主外键关系的表    连接分类：        普通连接        内连接  inner join…on…            inner join用内连接方式连接两张表 ，on">
+  <meta name="description" content="&#x2F;* Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第三课">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;21&#x2F;%E7%AC%AC%E4%B8%89%E8%AF%BE&#x2F;index.html">
+<meta property="og:title" content="第四课">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;21&#x2F;%E7%AC%AC%E5%9B%9B%E8%AF%BE&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&#x2F;*Mysql第三次课order by  排序group by 把表分组groupby…having…  分组并筛选符合条件的组子查询：    查询语句里面嵌套查询语句连接：    把多张表连接成一张表,注意一般连接主外键关系的表    连接分类：        普通连接        内连接  inner join…on…            inner join用内连接方式连接两张表 ，on">
+<meta property="og:description" content="&#x2F;* Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-21T00:49:15.892Z">
+<meta property="og:updated_time" content="2019-10-21T01:09:23.895Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,28 +152,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第三课" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第四课" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第三课
+      第四课
     </h1>
   
 
         
-        <a href="/2019/10/21/%E7%AC%AC%E4%B8%89%E8%AF%BE/" class="archive-article-date">
-  	<time datetime="2019-10-21T00:48:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
+        <a href="/2019/10/21/%E7%AC%AC%E5%9B%9B%E8%AF%BE/" class="archive-article-date">
+  	<time datetime="2019-10-21T01:08:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>/*Mysql第三次课</code></pre><p>order by  排序<br>group by 把表分组<br>groupby…having…  分组并筛选符合条件的组<br>子查询：<br>    查询语句里面嵌套查询语句<br>连接：<br>    把多张表连接成一张表,注意一般连接主外键关系的表<br>    连接分类：<br>        普通连接<br>        内连接  inner join…on…<br>            inner join用内连接方式连接两张表 ，on 后面写的是条件<br>        外连接（左连接 右链接）<br>            左连接:left join…on…<br>            （左边的表显示所有数据，右边的表只显示匹配上的数据）<br>            右链接：right join…on…<br>            （右边的表显示所有数据，左边的表只显示匹配上的数据）<br>        全连接<br>            左右边都全部显示</p>
-<p>*/</p>
+        <p>/*</p>
+<pre><code>Mysql第四次课</code></pre><p> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>*/<br>SELECT * FROM course<br>              WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的<br>#学生的信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把<br>#本班所有学生的信息查询<br>#出来<br>SELECT * FROM StudentInfo<br>           WHERE EXISTS(<br>SELECT * FROM StudentInfo<br>         WHERE address LIKE ‘%许昌%’<br>)</p>
 
       
 
@@ -253,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/21/%E7%AC%AC%E4%B8%89%E8%AF%BE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/21/%E7%AC%AC%E5%9B%9B%E8%AF%BE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,18 +267,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/21/%E7%AC%AC%E5%9B%9B%E8%AF%BE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          第四课
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/21/%E7%AC%AC%E4%BA%8C%E8%AF%BE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">第二课</div>
+    <a href="/2019/10/21/%E7%AC%AC%E4%B8%89%E8%AF%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第三课</div>
       <i class="icon-circle-right"></i>
     </a>
   
