@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>第四课 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;* Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;">
+  <meta name="description" content="Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;SEL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第四课">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;21&#x2F;%E7%AC%AC%E5%9B%9B%E8%AF%BE&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&#x2F;* Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;">
+<meta property="og:description" content="Mysql第四次课 truncate清空表 truncate table 表名 is  null is not null 模糊查询    like    % 代表一个或多个字符    _ 代表一个字符 exists存在    exists里边括住的是一个    查询语句,如果查询语句    有结果，外部查询就正常    执行，如果没结果，外部    查询不执行 not exists不存在*&#x2F;SEL">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-21T01:09:23.895Z">
+<meta property="og:updated_time" content="2019-10-21T01:13:50.228Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -172,8 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>/*</p>
-<pre><code>Mysql第四次课</code></pre><p> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>*/<br>SELECT * FROM course<br>              WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的<br>#学生的信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把<br>#本班所有学生的信息查询<br>#出来<br>SELECT * FROM StudentInfo<br>           WHERE EXISTS(<br>SELECT * FROM StudentInfo<br>         WHERE address LIKE ‘%许昌%’<br>)</p>
+        <pre><code>Mysql第四次课</code></pre><p> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>*/<br>SELECT * FROM course<br>              WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的<br>#学生的信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把<br>#本班所有学生的信息查询<br>#出来<br>SELECT * FROM StudentInfo<br>           WHERE EXISTS(<br>SELECT * FROM StudentInfo<br>         WHERE address LIKE ‘%许昌%’<br>)</p>
 
       
 
@@ -266,6 +265,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/10/22/%E7%AC%AC%E4%BA%94%E8%AF%BE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          第五课
+        
+      </div>
+    </a>
   
   
     <a href="/2019/10/21/%E7%AC%AC%E4%B8%89%E8%AF%BE/" id="article-nav-older" class="article-nav-link-wrap">
